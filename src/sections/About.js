@@ -21,8 +21,8 @@ const About=()=>{
             animate={controls}
             transition={{delay:0.1,stiffness:200}}
             >
-                <Title title="About MegaInnovation"  color="blue"/>
-                 <p>software to Every big idea starts with a small step forward and we are here for helping you take that small step ,
+                <Title title="About MegaInnovative"  color="blue"/>
+                 <p>Software to every big idea starts with a small step forward and we are here for helping you take that small step ,
                     let us solve your business problems by developing and integrating software to suit your needs.
                      we build and manage diversified portfolios, by keeping charges low and clearly show where you’re invested. 
                      </p>
@@ -30,7 +30,7 @@ const About=()=>{
                     Our teams come together every day to move our mission forward making simple, elegant tools to help you be productive 
                     without the stress Start your journey with mega innovative today
                     </p>
-                <Button content="WHy MegaInnovation?"/>
+                <Button content="WHy MegaInnovative?"/>
             </motion.div>
             <motion.div className="cards" ref={element}>
                 <Card

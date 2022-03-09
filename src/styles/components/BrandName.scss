@@ -1,29 +1,76 @@
 @import "../utils/colors.scss";
-.brand{
+.brand {
+  cursor: pointer;
+  span {
+    text-transform: uppercase;
+    font-size: xx-large;
+    border: 0.1rem solid #f50460;
+    color: $blueColor;
+    padding: 0.6rem 4rem;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+    letter-spacing: 0.2rem;
+  }
+}
+.footer {
+  span {
+    color: white;
+    border-color: white;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .brand {
+    span {
+      font-size: small;
+    }
+  }
+}
+@media all and(min-width:992px) and(max-width:1359px) {
+  .brand {
     cursor: pointer;
-    span{
-        text-transform: uppercase;
-        font-size: xx-large;
-        border:0.1rem solid #f50460;
-        color:$blueColor;
-        padding:0.6rem 4rem;
-        font-weight: bolder;
-        border-radius: 0.3rem;
-        letter-spacing: 0.2rem;
-
+    padding: 1em;
+    span {
+      font-size: 1em;
     }
+  }
+  
 }
-.footer{
-    span{
-        color: white;
-        border-color: white;
-
-    }
-}
-@media screen and (min-width:320px) and (max-width:480px){
-    .brand{
-        span{
-            font-size:small;
+@media all and(min-width:768px) and(max-width:991px){
+    .brand {
+        cursor: pointer;
+        padding: 1em;
+        span {
+          font-size: 1em;
         }
+      }
+     
+
+}
+@media all and(min-width:576px) and(max-width:767px){
+    .brand {
+        cursor: pointer;
+        padding: 1em;
+        span {
+          font-size: 2em;
+        }
+      }
+}
+@media all and (min-width: 320px) and (max-width: 575px){
+  .brand {
+    cursor: pointer;
+    padding: 1em;
+    span {
+      font-size: 3em;
     }
+  } 
+}
+@media all and (max-width: 320px){
+
+    .brand {
+        cursor: pointer;
+        padding: 1em;
+        span {
+          font-size: 3em;
+        }
+      }
 }

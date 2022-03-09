@@ -113,7 +113,7 @@ const Footer = () => {
               <div className="details">
                 <div className="detail-name">Location</div>
                 <div className="detail-content">
-                  <a href="#contact">AanamNagar,Kathmandu</a>
+                  <a href="#contact">Aanamnagar,Kathmandu</a>
                 </div>
               </div>
             </div>

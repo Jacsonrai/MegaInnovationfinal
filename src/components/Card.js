@@ -10,7 +10,7 @@ const Card=({Logo,title,animateCustom})=>{
         transition={{stiffness:5000}}>
             <div className="logo">{Logo}</div>
             <div className="card-title">
-                <h4>{title}</h4>
+                <div className="titleCard">{title}</div>
             </div>
 
 

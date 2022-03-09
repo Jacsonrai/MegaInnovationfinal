@@ -19,23 +19,23 @@ const Testimonials=()=>{
             </motion.div>
             <div className="testimonials" id="testimonial">
                 <Testimonial
-                content="The best on the net! Software development saved my business"
-                name="Ample"
-                designation="co-founder"
+                content="Thank so much for doing  a great job and for fine customer supports."
+                name="Ample International Education Consultancy "
+                designation="Director-Pramod Adhikari"
                 variants={cardAnimation}
                 animate={controls}
                 />
                 <Testimonial
-                content="They have a best Customer service,help me alot in my business grow"
-                name="Kings Aboard"
-                designation="Founder and CEO"
+                content="I can't say enough great things about Mega Innovative  . They know their stuff and are extremely friendly and easy to work with."
+                name="Mystic Holidays Tour & Travels"
+                designation="MD-Bimal Regmi"
                 variants={cardAnimation}
                 animate={controls}
                 />
                 <Testimonial
-                content="Thank to megaInnovation for extending my bussiness growth"
-                name="BMW Educational Consultancy"
-                designation="co-founder"
+                content="All you guys are awesome! Thanks for always helping me. Always very nice and friendly"
+                name="-Kings Abroad Education Consultancy "
+                designation="MD-Ram kharel"
                 variants={cardAnimation}
                 animate={controls}
                 />

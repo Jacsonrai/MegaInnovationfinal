@@ -4,6 +4,7 @@ import "../styles/sections/why.scss"
 import { motion } from "framer-motion"
 import { topContainerAnimation,reasonsAnimation,videoAnimation  } from "../Animation"
 import { useScroll } from "../components/useScroll"
+import videoImage from '../assets/mega_FB.png'
 
 
 const Why=()=>{
@@ -16,7 +17,7 @@ const Why=()=>{
             animate={controls}
             transition={{duration:0.5}}
          >
-         <Title title="Why MegaInnovation?" color="blue" lineCenter={true}/>
+         <Title title="Why MegaInnovative?" color="blue" lineCenter={true}/>
              
                 <div className="subTitle">
                     <p>Always stay update with the technologies thus we help our clients
@@ -31,7 +32,7 @@ const Why=()=>{
                 transition={{type:"tween",duration:1}}
                 >
                     <div className="video">
-                      
+                      <img className="videoImage" src={videoImage} alt=""/>
                     </div>
                 </motion.div>
                 <motion.div className="reasons" 

@@ -1,37 +1,43 @@
 @import "../utils//colors.scss";
 
-button{
-    color:white;
-    text-transform: uppercase;
-    padding:0.8rem 1rem;
-    border: 0.1rem solid transparent;
- 
-    border-radius: 0.25rem;
-    font-weight: bolder;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s ease-in-out;
-    svg{
-        margin-left:0.5rem;
-        font-size: large;
-    }
-    }
-    .blue{
-        background-color: $blueColor;
-        &:hover{
-            background-color: white;
-            border:0.1rem solid $blueColor;
-            color: $blueColor;
-        }
-    }
-    @media screen and (min-width:320px) and (max-width:480px){
-        button{
-            font-size: 1.5rem;
-            padding: 1.5rem;
-            svg{
-                font-size: small;
-            }
-        }
-    }
+button {
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8rem 1rem;
+  border: 0.1rem solid transparent;
+
+  border-radius: 0.25rem;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  svg {
+    margin-left: 0.5rem;
+    font-size: large;
+  }
+}
+.blue {
+  background-color: $blueColor;
+  &:hover {
+    background-color: white;
+    border: 0.1rem solid $blueColor;
+    color: $blueColor;
+  }
+}
+// @media all and(min-width:576px) and(max-width:767px) {
+//   .blue {
+//     font-size: 2.4em;
+//   }
+// }
+// @media all and(min-width:576px) and(max-width:767px){
+//     .blue {
+//         font-size: 2.4em;
+//       }  
+// }
+// @media all and (min-width: 320px) and (max-width: 575px){
+//     .blue {
+//         font-size: 2.5em;
+//       }  
+// }

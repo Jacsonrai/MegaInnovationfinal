@@ -1,97 +1,225 @@
 @import "../utils/colors.scss";
 .main-container {
-    margin: 0 10%;
+  margin: 0 10%;
   
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+  .container {
+    // display: grid;
+    // grid-template-columns: 60% 40%;
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 3rem;
+      color: $headingColor;
     }
-    .content{
-        margin-top: 3.4rem;
-        margin-right:3rem ;
+    p {
+      font-size: 1.4rem;
+      color: $lightFontColor;
+      line-height: 1.9rem;
+    }
+  }
+  .image {
+    img {
+      height: 35rem;
+      width: 35rem;
+   
+    }
+  }
+}
+@media all and (min-width: 1360px) {
+  .main-container {
+    .container {
+      display: grid;
+      grid-template-columns: 60% 40%;
+    }
+    .content {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+        color: $lightFontColor;
+        line-height: 1.9rem;
+      }
+    }
+    .image {
+      img {
+        height: 35rem;
+        width: 35rem;
+      }
+    }
+  }
+}
+@media all and(min-width:992px) and(max-width:1360px) {
+  .main-container {
+    .content {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .image {
+      img {
+        height: 20rem;
+        width: 25rem;
+      }
+    }
+  }
+}
+@media all and(min-width:768px) and(max-width:992px) {
+  .main-container {
+    .content {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 1em;
+      }
+    }
+    .image {
+      img {
+        height: 30rem;
+        width: 20rem;
+      }
+    }
+  }
+}
+@media all and(min-width:576px) and(max-width:768px) {
+  .main-container { 
+    .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+    .content {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        font-weight: 600;
+      }
+    }
+    .image {
+      img {
+        height: 40rem;
+        width: 40rem;
+      }
+    }
+  }
+}
+@media all and (min-width: 320px) and (max-width: 576px) {
+  .main-container {
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      h1 {
+        font-size: 3rem;
+        
+      }
+      p {
+        font-size: 2.3rem;
+
+        line-height: 3rem;
+      }
+    }
+    .image {
+      img {
+        height: 50rem;
+        width: 40rem;
+      }
+    }
+  }
+}
+@media all and (max-width: 320px){
+    .main-container {
+      .container {
         display: flex;
         flex-direction: column;
-        h1{
-            font-size: 3rem;
-            color:$headingColor;
+      }
+      .content {
+        h1 {
+          font-size: 3rem;
+          
         }
-        p{
-            font-size: 1.4rem;
-            color:$lightFontColor;
-            line-height: 1.9rem;
+        p {
+          font-size: 2.3rem;
+  
+          line-height: 3rem;
+        }
+      }
+      .image {
+        img {
+          height: 50rem;
+          width: 40rem;
+        }
+      }
+    }
+  }
+// @media screen and (min-width:320px) and (max-width:480px){
+//     .main-container{
+//         .container{
+//             grid-template-columns: 1fr;
+//             .content{
+//                 margin-right: 0;
+//                 h1{
+//                     font-size: 4rem;
+//                 }
+//                 p{
+//                     font-size: 2rem;
+//                     line-height: 2.5rem;
+//                 }
+//             }
 
-        }
-        .button-container{
-            display: flex;
-            button{
-                margin-right: 1rem;
-            }
-        }
-    }
-    .image{
-        img{
-            height: 35rem;
-            width:35rem;
-        }
-    }
-}
-@media screen and (min-width:320px) and (max-width:480px){
-    .main-container{
-        .container{
-            grid-template-columns: 1fr;
-            .content{
-                margin-right: 0;
-                h1{
-                    font-size: 4rem;
-                }
-                p{
-                    font-size: 2rem;
-                    line-height: 2.5rem;
-                }
-            }
-            
-        }
-    }
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-    .main-container{
-       
-        
-        .container{
-         
-            .image{
-                img{
-                   position: relative;
-                   left: 8rem;
-                   top:-2rem
-                  
-                }
-            }
-        }
-    }
-}
-@media screen and  (min-width:1024px)and (max-width: 1366px){
-    .main-container{
-        margin-bottom: 10%;
-        
-        .container{
-           .content{
-                h1{
-                    font-size: 2rem;
-                    line-height: 2rem;
-                }
-                p{
-                    font-size: 1.4rem;
-                    line-height: 1.5rem;
-                }
-            }
-            .image{
-                img{
-                   position: relative;
-                   left: 7rem;
-                  
-                }
-            }
-        }
-    }
-}
+//         }
+//     }
+// }
+// @media screen and (min-width:768px) and (max-width:1024px){
+//     .main-container{
+
+//         .container{
+
+//             .image{
+//                 img{
+//                    position: relative;
+//                    left: 8rem;
+//                    top:-2rem
+
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and  (min-width:1024px)and (max-width: 1366px){
+//     .main-container{
+//         margin-bottom: 10%;
+
+//         .container{
+//            .content{
+//                 h1{
+//                     font-size: 2rem;
+//                     line-height: 2rem;
+//                 }
+//                 p{
+//                     font-size: 1.4rem;
+//                     line-height: 1.5rem;
+//                 }
+//             }
+//             .image{
+//                 img{
+//                    position: relative;
+//                    left: 7rem;
+
+//                 }
+//             }
+//         }
+//     }
+// }

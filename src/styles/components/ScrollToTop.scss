@@ -1,25 +1,41 @@
-.scrollToTop{
-    background-color: rgb(18, 18, 88);
-    border-radius: 100%;
-    position: fixed;
-    height: 4rem;
-    width: 4rem;
+.scrollToTop {
+  background-color: rgb(18, 18, 88);
+  border-radius: 100%;
+  position: fixed;
+  height: 4rem;
+  width: 4rem;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    color: white;
+    font-size: 2rem;
+  }
+  &:hover {
+    background-color: white;
+    svg {
+      color: rgb(18, 18, 88);
+    }
+  }
+}
+@media all and (min-width: 1360px) {
+  .scrollToTop {
     bottom: 40px;
-    right: 40px;
-    z-index: 2000;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    svg{
-        color: white;
-        font-size: 2rem;
+    left: 40px;
+
+    svg {
+      color: white;
+      font-size: 2rem;
     }
-        &:hover{
-            background-color: white;
-            svg{
-                color: rgb(18, 18, 88);
-            }
-            
-        }
+    &:hover {
+      background-color: white;
+      svg {
+        color: rgb(18, 18, 88);
+      }
     }
+  }
+}

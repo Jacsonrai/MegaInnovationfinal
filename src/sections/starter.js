@@ -22,7 +22,7 @@ const Starter = () => {
           </p>
         </motion.div>
         <motion.div className="image" variants={ImageAnimation } animate={controls}  transition={{type:"tween"}}>
-          <img src={WorkImage} alt="WOrk" />
+          <img className="img" src={WorkImage} alt="WOrk" />
         </motion.div>
       </div>
     </div>

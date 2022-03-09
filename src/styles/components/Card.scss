@@ -20,13 +20,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.4rem;
-    
   }
   svg {
     font-size: 3rem;
     margin-bottom: 1rem;
-
-    
   }
 }
 .card-title {
@@ -34,63 +31,203 @@
   font-size: large;
   color: rgb(18, 18, 88);
 }
-@media screen and (min-width:320px) and (max-width:480px){
-    .card{
-        height: 12rem;
-        width: 65vw;
-        padding: 3rem 3.5rem;
-        .logo{
-            height: 5rem;
-            width: 5rem;
-            svg{
-                font-size: 5rem;
-            }
-        }
+@media all and (min-width: 1360px) {
+  .card {
+    height: 9rem;
+    width: 15rem;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s ease-in-out;
+    .logo {
+      background-color: #2563c033;
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.4rem;
     }
-}
-@media screen and (min-width:481px) and (max-width:768px){
-    .card{
-        height:15rem;
-        width: 15vw;
-        padding: 3rem 3.5rem;
-        .logo{
-            height: 4rem;
-            width: 4rem;
-            svg{
-                font-size: 4rem;
-            }
-        }
-        .card-title{
-            margin-bottom: 1rem;
-            font-size: medium;
-            color: rgb(18, 18, 88);
-        }
+    svg {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
+    .card-title {
+        font-size: 1.5em;
+        font-weight: 600;
+        .titleCard{
+            margin-top: 2em;
+        }
+      }
+  }
+
 }
-@media screen and (min-width:769px) and (max-width:1024px){
-   .card{
-       height: 15rem;
-       width: 15rem;
-   }
+@media all and(min-width:992px) and(max-width:1359px) {
+  .card {
+    height: 9rem;
+    width: 10rem;
+   
+.logo {
+      height: 5rem;
+      width: 5rem;
+    }
+    svg {
+      font-size: 5rem;
+    }
+  }
+  .card-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    .titleCard{
+        margin-top: 1em;
+    }
+  }
 }
-@media screen and (min-width:1024px)and(max-width: 1366px){
-    .card{
+@media all and(min-width:768px) and(max-width:992px){
+    .card {
+        height: 7rem;
+        width: 7rem;
+       
+    .logo {
+          height: 4rem;
+          width: 4rem;
+        }
+        svg {
+          font-size: 2.5rem;
+        }
+      }
+      .card-title {
+        font-size: 1em;
+        font-weight: 600;
+        .titleCard{
+            margin-top: 2em;
+        }
+      }
+}
+@media all and(min-width:576px) and(max-width:768px) {
+    .card {
+        height: 17rem;
+       width: 15em;
+       
+    .logo {
+          height: 10rem;
+          width:10rem;
+        }
+        svg {
+          font-size: 6rem;
+        }
+      }
+      .card-title {
+        font-size: 2em;
+        font-weight: 600;
+        .titleCard{
+            margin-top: 2em;
+        }
+      }
+  }
+  @media all and (min-width: 320px) and (max-width: 576px){
+    .card {
+        height: 15rem;
+       width: 15em;
+       
+    .logo {
+          height: 10rem;
+          width:10rem;
+        }
+        svg {
+          font-size: 6rem;
+        }
+      }
+      .card-title {
+        font-size: 2em;
+        font-weight: 600;
+        .titleCard{
+            margin-top: 1em;
+        }
+      }
+}
+@media all and (max-width: 320px) {
+    .card {
         height: 10rem;
-        width: 10rem;
-        .logo{
-            margin-top: 3rem;
-            svg{
-                
-                font-size: 5rem;
-               
-            }
-           }
-           .card-title{
-               position: relative;
-               top:1.5rem;
-               font-size:large;
-           }
-          
-      
-    }
+       width: 10em;
+       
+    .logo {
+          height: 5rem;
+          width:5rem;
+        }
+        svg {
+          font-size: 6rem;
+        }
+      }
+      .card-title {
+        font-size: 1.5em;
+        font-weight: 600;
+        .titleCard{
+            margin-top: 1em;
+        }
+      }
 }
+// @media screen and (min-width:320px) and (max-width:480px){
+//     .card{
+//         height: 12rem;
+//         width: 65vw;
+//         padding: 3rem 3.5rem;
+//         .logo{
+//             height: 5rem;
+//             width: 5rem;
+//             svg{
+//                 font-size: 5rem;
+//             }
+//         }
+//     }
+// }
+// @media screen and (min-width:481px) and (max-width:768px){
+//     .card{
+//         height:15rem;
+//         width: 15vw;
+//         padding: 3rem 3.5rem;
+//         .logo{
+//             height: 4rem;
+//             width: 4rem;
+//             svg{
+//                 font-size: 4rem;
+//             }
+//         }
+//         .card-title{
+//             margin-bottom: 1rem;
+//             font-size: medium;
+//             color: rgb(18, 18, 88);
+//         }
+//     }
+// }
+// @media screen and (min-width:769px) and (max-width:1024px){
+//    .card{
+//        height: 15rem;
+//        width: 15rem;
+//    }
+// }
+// @media screen and (min-width:1024px)and(max-width: 1366px){
+//     .card{
+//         height: 10rem;
+//         width: 10rem;
+//         .logo{
+//             margin-top: 3rem;
+//             svg{
+
+//                 font-size: 5rem;
+
+//             }
+//            }
+//            .card-title{
+//                position: relative;
+//                top:1.5rem;
+//                font-size:large;
+//            }
+
+//     }
+// }

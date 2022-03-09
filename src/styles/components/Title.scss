@@ -23,3 +23,10 @@
     align-items: center;
     flex-direction: column;
 }
+@media all and(min-width:992px) and(max-width:1359px){
+    .title{
+        h2{
+            font-size:2em;
+        }
+    } 
+}
